@@ -1,7 +1,12 @@
+import Hero from './Hero'
+
 const HomeView = () => {
   return (
     <div>
-      Hello World. This is a Home Page
+      <Hero text="Welcome to the Home Page" />
+      <p>
+        Hello World. This is a Home Page
+      </p>
     </div>
   )
 }
