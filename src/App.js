@@ -11,7 +11,16 @@ function App() {
   const [searchResults, setSearchResults] = useState([])
   const [searchText, setSearchText] = useState([''])
 
-  
+useEffect(() => {
+    if(searchText) {
+      fetch(`https://api.themoviedb.org/3/search/movie?api_key=ab166ff82684910ae3565621aea04d62&language=en-US&query=${searchText}&page=1&include_adult=false`)
+        .then(response => response.json())
+        .then(data => {
+          setSearchResults(data.results)
+        })
+    }
+  }, [searchText])
+ 
 
   return (
     <div className="App">
