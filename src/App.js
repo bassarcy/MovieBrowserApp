@@ -5,6 +5,7 @@ import HomeView from './components/HomeView'
 import AboutView from './components/AboutView'
 import { Routes, Route } from 'react-router-dom'
 import SearchView from './components/SearchView'
+import MovieView from './components/MovieView'
 
 function App() {
 
@@ -29,6 +30,7 @@ useEffect(() => {
         <Route path="/" element={<HomeView />} />
         <Route path="/about" element={<AboutView />} />
         <Route path ="/search" element={<SearchView keyword={searchText} searchResults={searchResults} />} />
+        <Route path="/movie/:id" element={<MovieView />} />
       </Routes>
     </div>
   );
