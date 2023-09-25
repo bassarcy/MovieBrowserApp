@@ -18,3 +18,25 @@
   background-position: center center;
   opacity: 0.4;
 }
+
+.card-original-title,
+.card-overview {
+  overflow: hidden;
+}
+
+.card-original-title {
+  height: 3rem;
+}
+
+.card-overview {
+  height: 4.3rem;
+}
+
+.card-img-top-custom {
+  width: 304px;
+  height: 456px;
+  border-top-right-radius: 1%;
+  border-top-left-radius: 1%;
+  background-image: url(https://t3.ftcdn.net/jpg/03/34/83/22/360_F_334832255_IMxvzYRygjd20VlSaIAFZrQWjozQH6BQ.jpg);
+  background-size: cover;
+}
