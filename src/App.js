@@ -6,6 +6,7 @@ import AboutView from "./components/AboutView";
 import { Routes, Route } from "react-router-dom";
 import SearchView from "./components/SearchView";
 import MovieView from "./components/MovieView";
+import PageNotFoundView from "./components/PageNotFoundView";
 
 function App() {
   const [searchResults, setSearchResults] = useState([]);
@@ -50,6 +51,10 @@ function App() {
         <Route
           path="/movie/:id"
           element={<MovieView />}
+        />
+        <Route
+          path="*"
+          element={<PageNotFoundView />}
         />
       </Routes>
     </div>
