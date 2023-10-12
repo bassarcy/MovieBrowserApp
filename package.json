@@ -1,5 +1,5 @@
 {
-  "name": "MovieBrowserApp",
+  "name": "movie-browser-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,7 +27,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://bassarcy.github.io/MovieBrowserApp",
+  "homepage": "https://bassarcy.github.io/movie-browser-app",
   "browserslist": {
     "production": [
       ">0.2%",
