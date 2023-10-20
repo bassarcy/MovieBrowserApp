@@ -5,7 +5,7 @@ const MovieCard = ({ movie }) => {
   const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
   const detailUrl = `/movie/${movie.id}`;
   return (
-    <div className="col-lg-3 col-md-4 col-2 my-4">
+    <div className="col-lg-3 col-md-4 col-6 my-4">
       <div className="card">
         <img
           src={posterUrl}
